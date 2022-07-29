@@ -9,7 +9,10 @@ import messages from '@intlify/vite-plugin-vue-i18n/messages'
 it('should mount app with hello message', () => {
   const wrapper = mount(App, {
     global: {
-      plugins: [createI18n({ messages })]
+      plugins: [createI18n({
+        locale: 'en',
+        messages
+      })]
     }
   })
 

@@ -10,6 +10,7 @@ it('should mount app with hello message', () => {
   const wrapper = mount(App, {
     global: {
       plugins: [createI18n({
+        locale: 'en',
         messages: {
           en: {
             hello: 'Hello'
